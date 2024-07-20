@@ -1,0 +1,33 @@
+/* Write your code here. */
+.nav-container {
+  display: flex;
+  justify-content: space-around;
+  background-color: #ffffff33;
+  height: 10vh;
+}
+
+.bg-container {
+  background: linear-gradient(to bottom, #9796f0, #fbc7d4);
+  background-size: cover;
+  height: 100vh;
+  color: white;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  font-size: 24px;
+  padding: 12px;
+}
+
+.emojis-card {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+}
