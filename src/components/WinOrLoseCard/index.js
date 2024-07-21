@@ -13,15 +13,15 @@ const WinOrLoseCard = props => {
   return (
     <div className="win-or-loss-container">
       <div className="details">
-        <h1>{gameStatus}</h1>
+        <h1 className="heading">{gameStatus}</h1>
         <p>{scoreLabel}</p>
-        <p>{score}/12</p>
-        <button type="button" onClick={onClickPlayAgain}>
+        <p className="score">{score}/12</p>
+        <button type="button" onClick={onClickPlayAgain} className="btn">
           Play Again
         </button>
       </div>
-      <div className="image">
-        <img src={imgUrl} alt="win or lose" />
+      <div className="image-section">
+        <img src={imgUrl} alt="win or lose" className="win-loss-image" />
       </div>
     </div>
   )

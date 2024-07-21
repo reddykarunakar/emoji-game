@@ -94,7 +94,7 @@ class EmojiGame extends Component {
   }
 
   render() {
-    const {clickedEmojiList, isGameInProgress, topScore} = this.props
+    const {clickedEmojiList, isGameInProgress, topScore} = this.state
     return (
       <div className="bg-container">
         <NavBar
@@ -102,7 +102,7 @@ class EmojiGame extends Component {
           topScore={topScore}
           isGameInProgress={isGameInProgress}
         />
-        <div>
+        <div className="container">
           {isGameInProgress ? this.renderEmojisList() : this.renderScoreCard()}
         </div>
       </div>
